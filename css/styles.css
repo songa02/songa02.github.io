@@ -1,0 +1,341 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css");
+@import url("https://use.typekit.net/sbq8kmc.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+li { list-style: none; }
+a { text-decoration: none; color: inherit;}
+
+#header {
+    background: url(../images/main.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+    position: relative;
+}
+#header > h1, #header > p {
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#header > h1 {
+    font-size: 130px;
+    font-family: 'ivymode', 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    color: #006ba5;
+}
+#header > p {
+    top: 40%;
+    color: #00afe1;
+    font-family: 'Playfair Display', 'Noto Sans KR', sans-serif;
+    letter-spacing: 8px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px #bef1ff;
+    font-size: 25px;
+}
+#header > img {
+    position: absolute;
+    opacity: 0.9;
+    animation: float 1.5s ease-in-out infinite alternate;
+}
+#header > img:first-child {
+    top: -50px;
+    left: 400px;
+}
+#header > img:nth-child(2) {
+    top: 400px;
+    left: 150px;    
+}
+#header > img:nth-child(3) {
+    top: 340px;
+    right: 160px;    
+}
+#header > img:nth-child(4) {
+    top: 210px;
+    right: 100px;    
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-40px);
+    }
+}
+#nav {
+    width: 1200px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    justify-content: center;
+}
+#nav > li > a {
+    display: block;
+    padding: 36px 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px 4px #9d9d9d;
+}
+#about-text {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#about-text > p {
+    width: 900px;
+    text-align: center;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: 500;        
+    line-height: 1.8;   
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+}
+#about-text > p::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/bf.png);
+    background-size: cover;
+    position: absolute;
+    top: -20px; left: 120px;
+}
+#about-text > p::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-image: linear-gradient(to bottom, #ffce00, #fff);
+    border-radius: 50%;
+    position: absolute;
+    top: -20px; right: 120px;
+}
+#about {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+#profile {
+    width: 250px;
+    text-align: center;
+}
+#profile > img {
+    width: 100%;
+}
+#profile > h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2.4;
+}
+#tools > ul {
+    width: 230px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#tools > ul > li {
+    margin-bottom: 10px;
+}
+#tools > ul > li > img {
+    width: 40px;
+}
+#edu { margin-bottom: 83px; }
+#certs  { margin-bottom: 50px; }
+#edu > h3, #tools > h3, #certs > h3, #activity > h3 {    
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#tools > h3 { margin-bottom: 22px; }
+#edu > ul > li, #certs > ul > li, #activity > ul > li {
+    line-height: 1.8;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+}
+#edu > ul > li > span, #certs > ul > li > span, #activity > ul > li > span {
+    font-weight: 500;
+    margin-right: 10px;
+}
+#project-container {
+    background-color: black;
+    color: white;
+}
+#project-paris, #project-dayoff {
+    width: 1200px;
+    padding: 200px 0;
+    margin: 0 auto;
+}
+#paris, #dayoff {
+    width: 100%;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+}
+#paris { 
+    display: flex; 
+}
+#dayoff { display: flex; }
+#dayoff-text {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#paris-text {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#paris-text > h4, #dayoff-text > h4 {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#paris-text > p, #dayoff-text > p {
+    line-height: 2;
+    font-size: 18px;
+    font-weight: 500;
+}
+.tech-stack > li {
+    line-height: 1.6;
+    color: #888888;
+}
+#paris-bg {
+    background: url(../images/paris-bg.png); 
+}
+#dayoff-bg {
+    background: url(../images/dayoff-bg.png);
+}
+#paris-bg, #dayoff-bg {
+    width: 692px;
+    height: 515px;
+    position: relative;
+}
+#paris-web, #dayoff-web {
+    position: absolute;
+    width: 528px;
+    height: 296px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+#paris-web > img, #dayoff-web > img { animation: slideUp 18s linear infinite; } 
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+#paris-contents > p {
+    text-align: right;
+}
+#paris-contents > p, #dayoff-contents > p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+#otherproject-container {     
+    width: 100%;
+    height: 1080px;
+    position: relative;
+}
+#otherproject {
+    width: 1200px;
+    margin: 0 auto;
+}
+#otherproject > h4 {
+    font-size: 50px;
+    text-align: center;
+    line-height: 3.5;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#other {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  display: none;
+}
+#character, #crafts {
+  height: 707px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden; 
+  display: none;
+  z-index: 100;
+}
+#graphic, #fair {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  z-index: 100;
+}
+#graphic {
+  top: 5%;
+}
+#fair {
+  top: 10%;
+}
+#character > img {
+  display: block;
+  z-index: 11;
+}
+#other > li > a {
+    display: block;
+}
+#other > li > a > img {
+  margin-bottom: 5px;
+}
+#contact-container {
+    width: 100%;
+    height: 540px;
+    display: flex;
+    align-items: center;
+}
+#contact {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+}
+#contact > h5 {
+    margin-bottom: 50px;
+}
+#title {
+    font-weight: 600;
+    font-size: 52px;
+    margin-bottom: 60px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#contact-item, .sns {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+#contact-item > li > a {
+    display: block;
+}
+#sns {
+  position: relative;
+}
+#sns > p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
